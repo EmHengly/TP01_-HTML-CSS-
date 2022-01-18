@@ -26,7 +26,7 @@
     //Loop drawing video
     (function loop(){
         if(playing){
-            canvas.getContext('2d').drawImage(video,0,0,canvas.Width,canvas.height);
+            context.drawImage(video,0,0,canvas.Width,canvas.height);
             setTimeout(loop,1000/30);
         }    
     });
